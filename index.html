@@ -491,128 +491,146 @@
                 white-space: normal;
             }
         }
+
+        @media (min-width: 2560px) {
+            .zoom-wrapper {
+                zoom: 2.0;
+            }
+        }
+
+        @media (min-width: 2560px) {
+            .zoom-wrapperr {
+                zoom: 1.65;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav>
+    <div class="zoom-wrapperr"> <!-- ADD THIS -->
 
-        <div class="nav-logo">
-            <a href="https://vatsalvarma.github.io/GREENSIRI---prbxxxx/">
-                <img
-                    src="https://raw.githubusercontent.com/vatsalvarma/Client-Project-/refs/heads/main/Asset%2011X.png">
-            </a>
-        </div>
+        <nav>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <div class="nav-logo">
+                <a href="https://vatsalvarma.github.io/GREENSIRI---prbxxxx/">
+                    <img
+                        src="https://raw.githubusercontent.com/vatsalvarma/Client-Project-/refs/heads/main/Asset%2011X.png">
+                </a>
+            </div>
 
-        <ul class="nav-menu">
-            <li><a href="https://vatsalvarma.github.io/GREENSIRI---prbxxxx/" onclick="closeMenu()">HOME</a></li>
-            <li><a href="https://vatsalvarma.github.io/TarniFarms/" onclick="closeMenu()">FARMS</a></li>
-            <li><a href="https://vatsalvarma.github.io/Greensiri-Residential-Coming-soon/"
-                    onclick="closeMenu()">RESIDENTIALS</a></li>
-            <li><a href="https://vatsalvarma.github.io/Greensiri-Villa-ComingSoon-page/"
-                    onclick="closeMenu()">VILLAS</a></li>
-            <li><a href="#">SHOT AT SITE</a></li>
-            <li><a href="https://vatsalvarma.github.io/About-Greensiri-page/">COMPANY</a></li>
-            <li><a href="https://vatsalvarma.github.io/Greensiri-blogs-/">BLOGS</a></li>
-            <li><a href="https://vatsalvarma.github.io/Greensiri-Contact/">CONTACT</a></li>
-        </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    </nav>
+            <ul class="nav-menu">
+                <li><a href="https://vatsalvarma.github.io/GREENSIRI---prbxxxx/" onclick="closeMenu()">HOME</a></li>
+                <li><a href="https://vatsalvarma.github.io/TarniFarms/" onclick="closeMenu()">FARMS</a></li>
+                <li><a href="https://vatsalvarma.github.io/Greensiri-Residential-Coming-soon/"
+                        onclick="closeMenu()">RESIDENTIALS</a></li>
+                <li><a href="https://vatsalvarma.github.io/Greensiri-Villa-ComingSoon-page/"
+                        onclick="closeMenu()">VILLAS</a></li>
+                <li><a href="#">SHOT AT SITE</a></li>
+                <li><a href="https://vatsalvarma.github.io/About-Greensiri-page/">COMPANY</a></li>
+                <li><a href="https://vatsalvarma.github.io/Greensiri-blogs-/">BLOGS</a></li>
+                <li><a href="https://vatsalvarma.github.io/Greensiri-Contact/">CONTACT</a></li>
+            </ul>
+
+        </nav>
+    </div>
 
     <h1 class="gallery-title" id="title">GALLERY</h1>
+    <div class="zoom-wrapper"> <!-- ADD THIS -->
 
-    <div class="perspective-container">
-        <div class="grid" id="grid"></div>
-    </div>
+        <div class="perspective-container">
+            <div class="grid" id="grid"></div>
+        </div>
 
-    <div class="popup" id="popup">
-        <span class="close" id="closeBtn">✕</span>
-        <div class="arrow left" id="prev">&#10094;</div>
-        <img id="popupImg">
-        <div class="arrow right" id="next">&#10095;</div>
-    </div>
+        <div class="popup" id="popup">
+            <span class="close" id="closeBtn">✕</span>
+            <div class="arrow left" id="prev">&#10094;</div>
+            <img id="popupImg">
+            <div class="arrow right" id="next">&#10095;</div>
+        </div>
 
 
 
-    <footer>
-        <div class="footer-grid">
+        <footer>
+            <div class="footer-grid">
 
-            <div class="footer-col">
-                <span class="footer-bold">GREENSIRI INFRA LLP</span>
-                <p class="footer-text">
-                    130/2, 3RD FLOOR, OMKARA BUILDING,<br>
-                    INTERNATIONAL AIRPORT ROAD, NEHRU NAGAR,<br>
-                    YELAHANKA, BENGALURU - 64
+                <div class="footer-col">
+                    <span class="footer-bold">GREENSIRI INFRA LLP</span>
+                    <p class="footer-text">
+                        130/2, 3RD FLOOR, OMKARA BUILDING,<br>
+                        INTERNATIONAL AIRPORT ROAD, NEHRU NAGAR,<br>
+                        YELAHANKA, BENGALURU - 64
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <a href="tel:+919511125552" class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        +91 95111 25552
+                    </a>
+
+                    <a href="mailto:contact@greensiri.in" class="footer-contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        contact@greensiri.in
+                    </a>
+                </div>
+
+                <div class="footer-col">
+                    <img src="https://raw.githubusercontent.com/vatsalvarma/Client-Project-/refs/heads/main/Asset%2011X.png"
+                        class="footer-logo">
+                    <p class="footer-tagline"></p>
+                </div>
+
+                <div class="footer-col footer-subscribe">
+                    <h5>DO YOU HAVE ANY QUERY?</h5>
+
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="example@email.com" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+
+                    <div class="subscribe-note">
+                        PLEASE FEEL FREE TO SHARE ANY QUERIES YOU HAVE
+                    </div>
+                </div>
+
+                <div class="footer-col footer-social">
+                    <h5>SOCIAL MEDIA LINKS</h5>
+
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/greensiriproperties" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/greensiri_properties" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Greensiri" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://in.pinterest.com/greensiriproperties" target="_blank"><i
+                                class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="https://www.linkedin.com/company/greensiri-infra-llp/posts/?feedView=all"
+                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919511125552?text=" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; Copyright 2026
+                    <span class="highlight">GREENSIRI PROPERTIES</span>.
+                    All Rights Reserved |
+                    Website Design by
+                    <span class="highlight">PRIZMABRIXX</span>
                 </p>
             </div>
-
-            <div class="footer-col">
-                <a href="tel:+919511125552" class="footer-contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    +91 95111 25552
-                </a>
-
-                <a href="mailto:contact@greensiri.in" class="footer-contact-item">
-                    <i class="fa-regular fa-envelope"></i>
-                    contact@greensiri.in
-                </a>
-            </div>
-
-            <div class="footer-col">
-                <img src="https://raw.githubusercontent.com/vatsalvarma/Client-Project-/refs/heads/main/Asset%2011X.png"
-                    class="footer-logo">
-                <p class="footer-tagline"></p>
-            </div>
-
-            <div class="footer-col footer-subscribe">
-                <h5>DO YOU HAVE ANY QUERY?</h5>
-
-                <form class="subscribe-form">
-                    <input type="email" placeholder="example@email.com" required>
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-
-                <div class="subscribe-note">
-                    PLEASE FEEL FREE TO SHARE ANY QUERIES YOU HAVE
-                </div>
-            </div>
-
-            <div class="footer-col footer-social">
-                <h5>SOCIAL MEDIA LINKS</h5>
-
-                <div class="footer-social-icons">
-                    <a href="https://www.facebook.com/greensiriproperties" target="_blank"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/greensiri_properties" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@Greensiri" target="_blank"><i
-                            class="fa-brands fa-youtube"></i></a>
-                    <a href="https://in.pinterest.com/greensiriproperties" target="_blank"><i
-                            class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="https://www.linkedin.com/company/greensiri-infra-llp/posts/?feedView=all"
-                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://wa.me/919511125552?text=" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; Copyright 2026
-                <span class="highlight">GREENSIRI PROPERTIES</span>.
-                All Rights Reserved |
-                Website Design by
-                <span class="highlight">PRIZMABRIXX</span>
-            </p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
         const horizontalImages = [
